@@ -1,9 +1,10 @@
 import React from 'react';
 import img from '../../assets/Image/global-village.png'
+import { NavLink } from 'react-router-dom';
 
 const Global = () => {
     return (
-        <div className='mx-10'>
+        <div className='mx-10 pb-20'>
             <img className='flex justify-center w-full md:h-[550px]' src={img} alt="" />
             {/* <h2 className='text-3xl font-bold text-[#FF2DF7]'>বিশ্বগ্রাম </h2> */}
 
@@ -79,6 +80,11 @@ const Global = () => {
                     <li>সংবাদমাধ্যম (News)</li>
                     <li>সাংস্কৃতিক বিনিময় (Cultural Exchange)</li>
                 </p>
+            </div>
+
+            <div className='mt-10 flex justify-between'>
+                <NavLink to='/ict1/ict' className='btn btn-primary'>Previous</NavLink>
+                <NavLink to='/ict1/ict' className='btn bg-orange-400 border-none text-white hover:bg-orange-500'>Next</NavLink>
             </div>
         </div>
     );
