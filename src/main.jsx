@@ -11,6 +11,9 @@ import Home from './Pages/Home.jsx';
 import IctChapter1 from './Pages/IctChapter1.jsx';
 import ICT from './Pages/Chapter1/ICT.jsx';
 import Global from './Pages/Chapter1/Global.jsx';
+import ICTChapter3 from './Pages/ICTChapter3.jsx';
+import Chapter4 from './Pages/Chapter4/Chapter4.jsx';
+import CodeEditor from './Pages/Chapter4/CodeEditor.jsx';
 // import Global from './Pages/Chapter1/Global.jsx'; // Import other chapter components
 // import Teleconferencing from './Pages/Chapter1/Teleconferencing.jsx';
 // import VirtualReality from './Pages/Chapter1/VirtualReality.jsx';
@@ -42,6 +45,18 @@ const router = createBrowserRouter([
       {
         path: '/ict1/global',
         element: <Global/>
+      },
+      {
+        path: '/Chapter-3',
+        element: <ICTChapter3/>
+      },
+      {
+        path: '/Chapter-4',
+        element: <Chapter4/>
+      },
+      {
+        path: '/Chapter-4/code-editor',
+        element: <CodeEditor/>
       }
     ]
   },
